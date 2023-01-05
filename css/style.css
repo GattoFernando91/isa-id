@@ -116,14 +116,14 @@ main {
     background-image: url("../assets/img/fondoProjects.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     font-family: 'Raleway', sans-serif;
 }
 
 .mainAboutMe {
     background-color: white;
-    height: 100vh;
+    height: 100%;
 }
 
 .mainAboutMe article figure img {
