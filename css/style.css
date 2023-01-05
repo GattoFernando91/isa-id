@@ -334,9 +334,8 @@ main {
 }
 
 .mainProjectsMenu section div img {
-    width: 95%;
-    margin: auto;
-    display: block;
+    width: 80%;
+    margin: 5%;
     border-radius: 10px;
 }
 
@@ -410,9 +409,14 @@ footer div {
     padding: 2%;
 }
 
-.contenedorDivProjects {
+.contenedorProjects {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.contenedorDivProjects1 {
     position: relative;
-    display: inline-flex;
+    display:inline-block;
     text-align: center;
     margin-top: 2%;
     margin-bottom: 5%;
@@ -421,14 +425,46 @@ footer div {
     transition: all 0.5s ease-out;
 }
 
-.contenedorDivProjects:hover {
+.contenedorDivProjects1:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+.contenedorDivProjects2 {
+    position: relative;
+    display:inline-block;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    transition: all 0.5s ease-out;
+}
+
+.contenedorDivProjects2:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+.contenedorDivProjects3 {
+    position: relative;
+    display:inline-block;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    transition: all 0.5s ease-out;
+}
+
+.contenedorDivProjects3:hover {
     transform: scale(1.05);
     transition: all 0.5s ease;
 }
 
 .textImgProjects {
     position: absolute;
-    top: 93%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
