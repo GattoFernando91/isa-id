@@ -61,10 +61,15 @@ header {
     height: 47px;
 }
 
+.logoIsaMobile {
+    display: none;
+}
+
 /* INICIO DEL FOOTER */
 
 footer {
     background-color: black;
+    height: 50px;
 }
 
 .logoIsaFooter {
@@ -944,6 +949,10 @@ footer div {
 
 @media only screen and (max-width: 992px) {
 
+    .logoIsaMobile {
+        display: none;
+    }
+
     .contenedorProjects {
         display: grid;
         grid-template-columns: 70%;
@@ -1076,15 +1085,15 @@ footer div {
     }
     
     .backgroundMovement {
-        height: 88vh;
+        height: 89vh;
     }
 
     .backgroundGeometry {
-        height: 88vh;
+        height: 89vh;
     }
 
     .backgroundTexture {
-        height: 88vh;
+        height: 89vh;
     }
 
     .color {
@@ -1104,27 +1113,37 @@ footer div {
     }
 
     .backgroundGif {
-        height: 88vh;
+        height: 89vh;
     }
 
-    .logoIsa {
-        width: 188px;
-        height: 47px;
+    nav {
+        width: 75%;
     }
 
     .navBar li a {
         text-decoration: none;
         color: #f07e2e;
         font-family: 'Raleway', sans-serif;
-        font-size: 11px;
+        font-size: 15px;
         font-weight: 900;
-    }
-
-    header div {
-    width: 50%;
     }
 
     .navBar {
         width: 100%;
+    }
+
+    .logoIsa {
+        display: none
+    }
+
+    .logoIsaFooter {
+        display: none;
+    }
+
+    .logoIsaMobile {
+        display: block;
+        height: 35px;
+        border-radius: 7px;
+        margin-left: 25%;
     }
 }
