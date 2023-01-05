@@ -1176,7 +1176,7 @@ footer div {
 }
 
 .labelContact input {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .pContact div span div a img {
@@ -1191,7 +1191,14 @@ footer div {
 .backgroundFormContact {
     position: relative;
     width: 90%;
-    height: 500px;
+    height: 530px;
+}
+
+.inputContact input {
+    margin: 1%;
+    margin-top: 11%;
+    margin-bottom: 6%;
+    font-size: 14px;
 }
 
 }
