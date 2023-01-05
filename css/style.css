@@ -1146,4 +1146,52 @@ footer div {
         border-radius: 7px;
         margin-left: 25%;
     }
+
+    .pAboutMe {
+    font-size: 14px;
+}
+
+.divAboutMe {
+    font-size: 18px;
+}
+
+.h2Contact {
+    font-size: 22px;
+}
+
+.pContact {
+    font-size: 14px;
+}
+
+.legendContact {
+    font-size: 18px;
+}
+
+.legendContact {
+    font-size: 18px;
+}
+
+.labelContact {
+    font-size: 14px;
+}
+
+.labelContact input {
+    font-size: 12px;
+}
+
+.pContact div span div a img {
+    height: 20px;
+    width: 20px;
+}
+
+.pContact div span div a {
+    margin: 1%;
+}
+
+.backgroundFormContact {
+    position: relative;
+    width: 90%;
+    height: 70%;
+}
+
 }
