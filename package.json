@@ -1,0 +1,19 @@
+{
+  "name": "isa-id",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GattoFernando91/isa-id.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GattoFernando91/isa-id/issues"
+  },
+  "homepage": "https://github.com/GattoFernando91/isa-id#readme"
+}

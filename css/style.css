@@ -1,1204 +1,1023 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap'); */
-
-/* paleta de colores
-
-#F07E2E
-#807C74
-#000000
-#FFFFFF
-
-tipografia
-
-font-family: 'Raleway', sans-serif;
-font-family: 'Merriweather', sans-serif;
-*/
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-html {
-    scroll-behavior: smooth;
-}
-
-/* INICIO DE HEADER */
 
 header {
-    background-color: black;
-    height: 50px;
+  background-color: black;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 }
 
 .imgHeader {
-    height: 96px;
-    width: 200px;
-}
-
-.navBar li {
-    list-style: none;
-}
-
-.navBar li a {
-    text-decoration: none;
-    color: #f07e2e;
-    font-family: 'Raleway', sans-serif;
-    font-size: 15px;
-    font-weight: 900;
-}
-
-.navBar li:hover {
-    transform: scale(1.1);
-}
-
-.navBar li a:hover {
-    color: white;
-}
-
-.logoIsa {
-    width: 188px;
-    height: 47px;
-}
-
-.logoIsaMobile {
-    display: none;
-}
-
-/* INICIO DEL FOOTER */
-
-footer {
-    background-color: black;
-    height: 55px;
-}
-
-.logoIsaFooter {
-    width: 188px;
-    height: 47px;
-}
-
-footer div {
-    color: #f07e2e;
-    font-family: 'Raleway', sans-serif;
-    text-align: right;
-    width: 13%;
-    margin-right: 15px;
-}
-
-footer div p {
-    font-weight: 900;
-}
-
-footer div a img {
-    height: 25px;
-    width: 25px;
-}
-
-/* INICIO DE MAIN */
-
-main {
-    background-color: black;
-    position: relative;
-    margin: 0;
-}
-
-.backgroundGif {
-    background-image: url("../assets/video/background-isa.gif");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-}
-
-.backgroundGif section img {
-    display: flex;
-    margin: auto;
-    align-items: center;
-}
-
-.mainProjectsMenu {
-    background-image: url("../assets/img/fondoProjects.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    font-family: 'Raleway', sans-serif;
-}
-
-.mainAboutMe {
-    background-color: white;
-    height: 100%;
-}
-
-.mainAboutMe article figure img {
-    height: 700px;
-    border-radius: 25px;
-    margin-top: 13%;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
-}
-
-.h2AboutMe {
-    color: #f07e2e;
-    font-family: 'Raleway', sans-serif;
-    font-size: 50px;
-    margin-bottom: 5%;
-}
-
-.pAboutMe {
-    color: black;
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-}
-
-.divAboutMe {
-    width: 100%;
-    display: flex;
-    justify-content:center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 24px;
-    font-weight: 900;
-    margin-bottom: 3%;
-    padding-left: 50%;
-}
-
-.aAboutMe {
-    display: flex;
-    text-decoration: underline;
-    color: #f07e2e;
-}
-
-.aAboutMe:hover p {
-    color: black;
-    text-decoration: underline;
-}
-
-.h2Projects {
-    color: #f07e2e;
-    font-family: 'Raleway', sans-serif;
-    font-size: 30px;
-    text-align: center;
-    font-weight: 900;
-    text-shadow: 0 0 0.2em #000000, 0 0 0.2em #000000;
-    padding-top: 3%;
-    padding-bottom: 2%;
-}
-
-.pProjects {
-    color: #f07e2e;
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    text-align: left;
-    text-shadow: 0 0 0.2em #000000, 0 0 0.2em #000000;
-    font-weight: 700;
-}
-
-.aProjects {
-    text-decoration: none;
-}
-
-.h2Contact {
-    font-family: 'Raleway', sans-serif;
-    font-size: 30px;
-    font-weight: 900;
-    color: #f07e2e;
-    text-align: center;
-    margin-bottom: 5%;
-    margin-top: 2%;
-}
-
-.pContact {
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    font-weight: 900;
-    color: #f07e2e;
-    text-align: left;
-}
-
-.legendContact {
-    font-family: 'Raleway', sans-serif;
-    font-size: 25px;
-    text-align: center;
-    font-weight: 900;
-}
-
-.backgroundFormContact {
-    position: relative;
-    width: 800px;
-    height: 600px;
-}
-
-.backgroundFormContact::before {
-    content: "";
-    background-color: #000000;
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.9;
-    border-radius: 25px;
-}
-
-.formOnTop {
-    position: relative;
-}
-
-.backButton {
-    display: flex;
-    justify-content: center;
-    text-decoration: underline;
-    color: #f07e2e;
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    font-weight: 900;
-    text-shadow: 0 0 0.2em #000000, 0 0 0.2em #000000;
-}
-
-.aBackButton:hover p {
-    color: white;
-    text-decoration: underline;
-}
-
-.backButton a {
-    margin-bottom: 2%;
-    margin-top: 3%;
-    color: #f07e2e;
-}
-
-.imgProjects {
-    width: 70%;
-    border-radius: 10px;
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-.imgProjects:hover {
-    -webkit-transform: scale(1.01);
-    -ms-transform: scale(1.01);
-    transform: scale(1.01);
-}
-
-.color {
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    transition: all 1s ease;
-}
-
-.color:hover {
-    filter: grayscale(0%);
-    filter: gray;
-    -webkit-filter: grayscale(0%);
-    filter: none;
-    transition: 1s ease;
-}
-
-.backgroundMovement {
-    background-image: url("../assets/img/background-movement.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: normal;
-}
-
-.backgroundGeometry {
-    background-image: url("../assets/img/background-geometry.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: normal;
-}
-
-.backgroundTexture {
-    background-image: url("../assets/img/background-texture.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: normal;
-}
-
-
-/* ESTETICA PROYECTOS */
-
-.mainProjects {
-    background-color: white;
-    font-family: 'Raleway', sans-serif;
-}
-
-.mainProjects h3 {
-    font-size: 32px;
-    font-weight: 900;
-    color: #f07e2e;
-    text-align: center;
-}
-
-.mainProjects p {
-    font-weight: 900;
-    text-align: center;
-}
-
-.mainProjectsMenu section div img {
-    width: 80%;
-    margin: 5%;
-    border-radius: 10px;
-}
-
-/* FLEXBOX */
-
-header {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-}
-
-nav {
-    width: 50%;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-}
-
-footer div {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 50%;
-    gap: 1%;
+  height: 96px;
+  width: 200px;
 }
 
 .navBar {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
+}
+.navBar li {
+  list-style: none;
+}
+.navBar li a {
+  text-decoration: none;
+  color: #F07E2E;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+}
+.navBar li a:hover {
+  color: white;
+}
+.navBar li:hover {
+  transform: scale(1.1);
+}
+
+.logoIsa {
+  width: 188px;
+  height: 47px;
+}
+
+.logoIsaMobile {
+  display: none;
+}
+
+nav {
+  width: 50%;
+}
+
+main {
+  background-color: black;
+  position: relative;
+  margin: 0;
 }
 
 .backgroundGif {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  background-image: url("../assets/video/background-isa.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-
-/* Main Flexbox */
-
-.mainAboutMe article {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-}
-
-.mainAboutMe article figure {
-    display: flex;
-    align-items: center;
-}
-
-.mainAboutMe article div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 45%;
-}
-
-.mainAboutMe article div div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: auto;
-    padding: 2%;
-}
-
-.contenedorProjects {
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
-
-.contenedorDivProjects1 {
-    position: relative;
-    display:inline-block;
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 5%;
-    margin-left: 3%;
-    margin-right: 3%;
-    transition: all 0.5s ease-out;
-}
-
-.contenedorDivProjects1:hover {
-    transform: scale(1.05);
-    transition: all 0.5s ease;
-}
-
-.contenedorDivProjects2 {
-    position: relative;
-    display:inline-block;
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 5%;
-    margin-left: 3%;
-    margin-right: 3%;
-    transition: all 0.5s ease-out;
-}
-
-.contenedorDivProjects2:hover {
-    transform: scale(1.05);
-    transition: all 0.5s ease;
-}
-
-.contenedorDivProjects3 {
-    position: relative;
-    display:inline-block;
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 5%;
-    margin-left: 3%;
-    margin-right: 3%;
-    transition: all 0.5s ease-out;
-}
-
-.contenedorDivProjects3:hover {
-    transform: scale(1.05);
-    transition: all 0.5s ease;
-}
-
-.textImgProjects {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.backgroundFormContact {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-
-.labelContact {
-    display: flex;
-    flex-direction: column;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.inputContact {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.inputContact input {
-    margin: 1%;
-    font-size: 16px;
-    font-family: 'Raleway', sans-serif;
-    color: #000000;
-    font-weight: 900;
-    text-align: center;
-    background-color: #ffffff;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-bottom: 3%;
-}
-
-.legendContact {
-    margin: 2%;
-    font-size: 20px;
-    font-family: 'Raleway', sans-serif;
-    color: #f07e2e;
-    font-weight: 900;
-    text-align: auto;
-}
-
-.labelContact {
-    margin: 2%;
-    font-size: 20px;
-    font-family: 'Raleway', sans-serif;
-    color: #ffffff;
-    font-weight: 900;
-    text-align: auto;
-    border-radius: 10px;
-}
-
-.labelContact input {
-    font-size: 16px;
-    font-family: 'Raleway', sans-serif;
-    color: #000000;
-    font-weight: 900;
-    text-align: center;
-    border-radius: 10px;
-    width: auto;
-    margin: 1%;
-}
-
-.fieldsetContact {
-    margin-top: 2%;
-    margin-right: 5%;
-    margin-left: 5%;
-    text-align: auto;
-    border-radius: 10px;
-}
-
-.pContact {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 2%;
-    font-weight: 900;
-}
-
-.pContact div p {
-    color: #ffffff;
-}
-
-.pContact div span p {
-    color: #f07e2e;
-}
-
-.pContact div span div {
-    display: flex;
-    justify-content: left;
-}
-
-.pContact div span div a {
-    margin: 2%;
-}
-
-.pContact div span div a img {
-    height: 25px;
-}
-
-/* ReSize Logo Isa Home */
-
 .backgroundGif section img {
-    -webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  -webkit-animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
-@-webkit-keyframes scale-up-center {
-    0% {
-        -webkit-transform: scale(0.5);
-        transform: scale(0.5);
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
+.mainProjectsMenu {
+  background-image: url("../assets/img/fondoProjects.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+}
+.mainProjectsMenu section div img {
+  width: 80%;
+  margin: 5%;
+  border-radius: 10px;
 }
 
-@keyframes scale-up-center {
-    0% {
-        -webkit-transform: scale(0.5);
-        transform: scale(0.5);
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
+.mainAboutMe {
+  background-color: white;
+  height: 100%;
+}
+.mainAboutMe article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.mainAboutMe article figure {
+  display: flex;
+  align-items: center;
+}
+.mainAboutMe article figure img {
+  height: 700px;
+  border-radius: 25px;
+  margin-top: 13%;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
+}
+.mainAboutMe article div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+}
+.mainAboutMe article div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: auto;
+  padding: 2%;
 }
 
-/* Fin ReSize Logo Isa Home */
-
-/* Projects one by one start*/
-
-.titlePr div h3 {
-    color: #f07e2e;
-    font-family: 'Raleway', sans-serif;
-    font-size: 44px;
-    text-align: center;
-    font-weight: 900;
-    text-shadow: 0 0 0.1em #000000, 0 0 0.1em #000000;
-    padding-top: 3%;
-    padding-bottom: 2%;
+.h2AboutMe {
+  color: #F07E2E;
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  margin-bottom: 5%;
 }
 
-.titlePr div p {
-    color: #000000;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 900;
-    font-size: 20px;
-}
-
-/* EVIAN X OFF-WHITE */
-
-.gridOW {
-    display: grid;
-    height: 100%;
-    width: 100%;
-    grid-template-columns: repeat(6, auto);
-    grid-template-rows: repeat(7, auto);
-    gap: 50px;
-    justify-items: center;
-    padding: 3%;
-}
-
-.itemOW1 {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 3%;
-}
-
-.itemOW2 {
-    grid-column: 3 / 7;
-    grid-row: 1 / 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.itemOW2 img {
-    width: 100%;
-    border-radius: 25px;
-    box-shadow: 0 0 1em #000000, 0 0 1em #000000;
-}
-
-.itemOW3 {
-    grid-column: 4 / 7;
-    grid-row: 2 / 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 0 0 0.1em #000000, 0 0 0.1em #000000;
-}
-
-.itemOW4 {
-    grid-column: 1 / 4;
-    grid-row: 2 / 3;
-}
-
-.itemOW4 img {
-    width: 90%;
-    border-radius: 25px;
-    box-shadow: 0 0 1em #000000, 0 0 1em #000000;
-}
-
-.itemOW5 {
-    grid-column: 1 / 5;
-    grid-row: 4 / 5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 0 0 0.1em #000000, 0 0 0.1em #000000;
-}
-
-.itemOW6 {
-    grid-column: 5 / 7;
-    grid-row: 4 / 5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 60%;
-}
-
-.itemOW7 {
-    grid-column: 5 / 7;
-    grid-row: 4 / 5;
-}
-
-.itemOW7 img {
-    width: 100%;
-    height: 60%;
-    border-radius: 25px;
-    box-shadow: 0 0 1em #000000, 0 0 1em #000000;
-}
-
-.itemOW8 {
-    grid-column: 1 / 7;
-    grid-row: 5 / 6;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-shadow: 0 0 0.1em #000000, 0 0 0.1em #000000;
-}
-
-.itemOW9 {
-    grid-column: 1 / 7;
-    grid-row: 7 / 8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.itemOW9 img {
-    width: 100%;
-    border-radius: 25px;
-    box-shadow: 0 0 1em #000000, 0 0 1em #000000;
-}
-
-/* FIN EVIAN X OFF-WHITE */
-
-/* TINY HOUSE */
-
-.gridTH {
-    display: grid;
-    height: 100%;
-    width: 100%;
-    grid-template-columns: repeat(6, auto);
-    grid-template-rows: repeat(11, auto);
-    gap: 50px;
-    justify-items: center;
-}
-
-.itemTH1 {
-    grid-column: 1 / 7;
-    grid-row: 1 / 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.itemTH2 {
-    grid-column: 1 / 7;
-    grid-row: 2 / 3;
-    display: flex;
-    justify-content: center;
-}
-
-.itemTH2 img {
-    width: 80%;
-    border-radius: 25px;
-    box-shadow: 0 0 1em #000000, 0 0 1em #000000;
-}
-
-.itemTH3 {
-    grid-column: 1 / 4;
-    grid-row: 3 / 4;
-    text-shadow: 0 0 0.1em #000000, 0 0 0.1em #000000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-left: 10%;
-}
-
-.itemTH4 {
-    grid-column: 4 / 7;
-    grid-row: 3 / 4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.itemTH4 img {
-    width: 80%;
-    border-radius: 25px;
-    box-shadow: 0 0 1em #000000, 0 0 1em #000000;
-}
-
-.itemTH5 {
-    grid-column: 1 / 7;
-    grid-row: 4 / 5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-left: 5%;
-    padding-right: 5%;
-    text-shadow: 0 0 0.1em #000000, 0 0 0.1em #000000;
-}
-
-.itemTH6 {
-    grid-column: 1 / 7;
-    grid-row: 5 / 6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.itemTH6 img {
-    width: 80%;
-    border-radius: 25px;
-    box-shadow: 0 0 1em #000000, 0 0 1em #000000;
-}
-
-.itemTH7 {
-    grid-column: 3 / 5;
-    grid-row: 6 / 9;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 0 0 0.1em #000000, 0 0 0.1em #000000;
-}
-
-.itemTH8 {
-    grid-column: 1 / 3;
-    grid-row: 6 / 8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.itemTH8 img {
-    width: 90%;
-    border-radius: 25px;
-    box-shadow: 0 0 1em #000000, 0 0 1em #000000;
-}
-
-.itemTH9 {
-    grid-column: 1 / 3;
-    grid-row: 8 / 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.itemTH9 img {
-    width: 90%;
-    border-radius: 25px;
-    box-shadow: 0 0 1em #000000, 0 0 1em #000000;
-}
-
-.itemTH10 {
-    grid-column: 5 / 7;
-    grid-row: 6 / 8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.itemTH10 img {
-    width: 90%;
-    border-radius: 25px;
-    box-shadow: 0 0 1em #000000, 0 0 1em #000000;
-}
-
-.itemTH11 {
-    grid-column: 5 / 7;
-    grid-row: 8 / 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.itemTH11 img {
-    width: 90%;
-    border-radius: 25px;
-    box-shadow: 0 0 1em #000000, 0 0 1em #000000;
-}
-
-.itemTH12 {
-    grid-column: 3 / 5;
-    grid-row: 9 / 10;
-    display: flex;
-    justify-content: center;
-}
-
-.itemTH12 img {
-    width: 70%;
-    border-radius: 25px;
-    box-shadow: 0 0 1em #000000, 0 0 1em #000000;
-}
-
-.itemTH13 {
-    grid-column: 1 / 4;
-    grid-row: 10 / 11;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10%;
-    padding-left: 10%;
-    text-shadow: 0 0 0.1em #000000, 0 0 0.1em #000000;
-}
-
-.itemTH14 {
-    grid-column: 4 / 7;
-    grid-row: 10 / 11;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10%;
-    padding-right: 10%;
-}
-
-.itemTH14 img {
-    width: 90%;
-    border-radius: 25px;
-    box-shadow: 0 0 1em #000000, 0 0 1em #000000;
-}
-
-/* FIN TINY HOUSE */
-
-/* SUSTAINABLE LIVING */
-
-.gridSL {
-    display: grid;
-    height: 100%;
-    width: 100%;
-    grid-template-columns: repeat(6, auto);
-    grid-template-rows: repeat(20, auto);
-    gap: 50px;
-    justify-items: center;
-    padding: 3%;
-}
-
-
-/* CONFIGURACION MEDIA QUERY */
-
-@media only screen and (max-width: 992px) {
-
-    .logoIsaMobile {
-        display: none;
-    }
-
-    .contenedorProjects {
-        display: grid;
-        grid-template-columns: 70%;
-        justify-content: center;
-    }
-
-    .mainProjectsMenu {
-        height: 100%;
-    }
-
-    .mainAboutMe article figure img {
-        height: 500px;
-        border-radius: 25px;
-        margin-top: 13%;
-        box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
-    }
-    
-    .mainAboutMe {
-        height: 91vh;
-    }
-
-    .backgroundGif {
-        height: 91vh;
-    }
-
-    .backgroundFormContact {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-    }
-
-    .backgroundMovement {
-        height: 91vh;
-    }
-
-    .backgroundGeometry {
-        height: 91vh;
-    }
-
-    .backgroundTexture {
-        height: 91vh;
-    }
-
-    .color {
-        filter: grayscale(0%);
-        -webkit-filter: grayscale(0%);
-        transition: all 1s ease;
-    }
-
-}
-
-@media only screen and (max-width: 576px) {
-
-    .contenedorProjects {
-        display: grid;
-        grid-template-columns: 90%;
-        justify-content: center;
-    }
-
-    .h2Projects {
-        font-size: 20px;
-    }
-    
-    footer div p {
-        display: none;
-    }
-    footer div {
-        gap: 5%;
-    }
-
-    .mainAboutMe article {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .mainAboutMe article figure img {
-        height: 50%;
-        border-radius: 25px;
-        margin-top: 13%;
-        box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
-    }
-
-    .mainAboutMe article div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 90%;
-        margin-top: 5%;
-    }
-    
-    .backgroundGif section img {
-        display: flex;
-        margin: auto;
-        align-items: center;
-        width: 80%;
-    }
-
-    .backgroundFormContact {
-        display: flex;
-        flex-direction: column;
-        width:90%;
-    }
-
-    .mainProjectsMenu {
-        height: 100%;
-    }
-
-    .pContact {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin-top: 2%;
-        margin-left: 5%;
-        font-weight: 900;
-    }
-
-    .pContact div {
-        margin-top: 2%;
-    }
-
-    .pContact div span div a img {
-        height: 25px;
-        width: 25px;
-    }
-
-    .mainAboutMe {
-        height: 100%;
-    }
-    
-    .backgroundMovement {
-        height: 89vh;
-    }
-
-    .backgroundGeometry {
-        height: 89vh;
-    }
-
-    .backgroundTexture {
-        height: 89vh;
-    }
-
-    .color {
-        filter: grayscale(0%);
-        -webkit-filter: grayscale(0%);
-        transition: all 1s ease;
-    }
-
-    .divAboutMe {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .mainAboutMe {
-        height: 100%;
-    }
-
-    .backgroundGif {
-        height: 89vh;
-    }
-
-    nav {
-        width: 75%;
-    }
-
-    .navBar li a {
-        text-decoration: none;
-        color: #f07e2e;
-        font-family: 'Raleway', sans-serif;
-        font-size: 15px;
-        font-weight: 900;
-    }
-
-    .navBar {
-        width: 100%;
-    }
-
-    .logoIsa {
-        display: none
-    }
-
-    .logoIsaFooter {
-        display: none;
-    }
-
-    .logoIsaMobile {
-        display: block;
-        height: 35px;
-        border-radius: 7px;
-        margin-left: 25%;
-    }
-
-    .pAboutMe {
-    font-size: 14px;
+.pAboutMe {
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
 }
 
 .divAboutMe {
-    font-size: 18px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 3%;
+  padding-left: 50%;
+}
+
+.aAboutMe {
+  display: flex;
+  text-decoration: underline;
+  color: #F07E2E;
+}
+.aAboutMe:hover p {
+  color: black;
+  text-decoration: underline;
+}
+
+.h2Projects {
+  color: #F07E2E;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 900;
+  text-shadow: 0 0 0.2em #000000, 0 0 0.2em #000000;
+  padding-top: 3%;
+  padding-bottom: 2%;
+}
+
+.pProjects {
+  color: #F07E2E;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  text-align: left;
+  text-shadow: 0 0 0.2em #000000, 0 0 0.2em #000000;
+  font-weight: 700;
+}
+
+.aProjects {
+  text-decoration: none;
 }
 
 .h2Contact {
-    font-size: 22px;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  color: #F07E2E;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 2%;
 }
 
 .pContact {
-    font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: #F07E2E;
+  text-align: left;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2%;
+  font-weight: 900;
 }
-
-.legendContact {
-    font-size: 18px;
+.pContact div p {
+  color: white;
 }
-
-.legendContact {
-    font-size: 18px;
+.pContact div span p {
+  color: #F07E2E;
 }
-
-.labelContact {
-    font-size: 14px;
+.pContact div span div {
+  display: flex;
+  justify-content: left;
 }
-
-.labelContact input {
-    font-size: 14px;
-}
-
-.pContact div span div a img {
-    height: 20px;
-    width: 20px;
-}
-
 .pContact div span div a {
-    margin: 1%;
+  margin: 2%;
+}
+.pContact div span div a img {
+  height: 25px;
+}
+
+.legendContact {
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 900;
+  margin: 2%;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  color: #F07E2E;
+  font-weight: 900;
+  text-align: auto;
 }
 
 .backgroundFormContact {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.backgroundFormContact::before {
+  content: "";
+  background-color: black;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.9;
+  border-radius: 25px;
+}
+
+.formOnTop {
+  position: relative;
+}
+
+.backButton {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  color: #F07E2E;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  text-shadow: 0 0 0.2em #000000, 0 0 0.2em #000000;
+}
+.backButton a {
+  margin-bottom: 2%;
+  margin-top: 3%;
+  color: #F07E2E;
+}
+
+.aBackButton:hover p {
+  color: white;
+  text-decoration: underline;
+}
+
+.imgProjects {
+  width: 70%;
+  border-radius: 10px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.imgProjects:hover {
+  -webkit-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
+}
+
+.color {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: all 1s ease;
+}
+.color:hover {
+  filter: grayscale(0%);
+  filter: gray;
+  -webkit-filter: grayscale(0%);
+  filter: none;
+  transition: 1s ease;
+}
+
+.backgroundMovement {
+  background-image: url("../assets/img/background-movement.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: normal;
+}
+
+.backgroundGeometry {
+  background-image: url("../assets/img/background-geometry.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: normal;
+}
+
+.backgroundTexture {
+  background-image: url("../assets/img/background-texture.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: normal;
+}
+
+.mainProjects {
+  background-color: white;
+  font-family: "Raleway", sans-serif;
+}
+.mainProjects h3 {
+  font-size: 32px;
+  font-weight: 900;
+  color: #F07E2E;
+  text-align: center;
+}
+.mainProjects p {
+  font-weight: 900;
+  text-align: center;
+}
+
+.contenedorProjects {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.contenedorDivProjects1 {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
+  transition: all 0.5s ease-out;
+}
+.contenedorDivProjects1:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+
+.contenedorDivProjects2 {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
+  transition: all 0.5s ease-out;
+}
+.contenedorDivProjects2:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+
+.contenedorDivProjects3 {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
+  transition: all 0.5s ease-out;
+}
+.contenedorDivProjects3:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+
+.textImgProjects {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.labelContact {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin: 2%;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-weight: 900;
+  text-align: auto;
+  border-radius: 10px;
+}
+.labelContact input {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  color: black;
+  font-weight: 900;
+  text-align: center;
+  border-radius: 10px;
+  width: auto;
+  margin: 1%;
+}
+
+.inputContact {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.inputContact input {
+  margin: 1%;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  color: black;
+  font-weight: 900;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 3%;
+}
+
+.fieldsetContact {
+  margin-top: 2%;
+  margin-right: 5%;
+  margin-left: 5%;
+  text-align: auto;
+  border-radius: 10px;
+}
+
+.titlePr div h3 {
+  color: #F07E2E;
+  font-family: "Raleway", sans-serif;
+  font-size: 44px;
+  text-align: center;
+  font-weight: 900;
+  text-shadow: 0 0 0.1em #000000, 0 0 0.1em #000000;
+  padding-top: 3%;
+  padding-bottom: 2%;
+}
+.titlePr div p {
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.error404 {
+  background-image: url("../../assets/video/background-isa.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.error404 p {
+  color: #F07E2E;
+  font-family: "Raleway", sans-serif;
+  font-size: 300%;
+  font-weight: 900;
+  text-shadow: 0 0 0.1em #000000, 0 0 0.1em #000000;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  background-color: black;
+  height: 55px;
+}
+footer div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  gap: 1%;
+  color: #F07E2E;
+  font-family: "Raleway", sans-serif;
+  text-align: right;
+  margin-right: 15px;
+}
+footer div p {
+  font-weight: 900;
+}
+footer div a img {
+  height: 25px;
+  width: 25px;
+}
+
+.logoIsaFooter {
+  width: 188px;
+  height: 47px;
+}
+
+.gridOW {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: repeat(7, auto);
+  gap: 50px;
+  justify-items: center;
+  padding: 3%;
+}
+
+.itemOW1 {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3%;
+}
+
+.itemOW2 {
+  grid-column: 3/7;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.itemOW2 img {
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 0 1em #000000, 0 0 1em #000000;
+}
+
+.itemOW3 {
+  grid-column: 4/7;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0 0.1em #000000, 0 0 0.1em #000000;
+}
+
+.itemOW4 {
+  grid-column: 1/4;
+  grid-row: 2/3;
+}
+.itemOW4 img {
+  width: 90%;
+  border-radius: 25px;
+  box-shadow: 0 0 1em #000000, 0 0 1em #000000;
+}
+
+.itemOW5 {
+  grid-column: 1/5;
+  grid-row: 4/5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0 0.1em #000000, 0 0 0.1em #000000;
+}
+
+.itemOW6 {
+  grid-column: 5/7;
+  grid-row: 4/5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+}
+
+.itemOW7 {
+  grid-column: 5/7;
+  grid-row: 4/5;
+}
+.itemOW7 img {
+  width: 100%;
+  height: 60%;
+  border-radius: 25px;
+  box-shadow: 0 0 1em #000000, 0 0 1em #000000;
+}
+
+.itemOW8 {
+  grid-column: 1/7;
+  grid-row: 5/6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-shadow: 0 0 0.1em #000000, 0 0 0.1em #000000;
+}
+
+.itemOW9 {
+  grid-column: 1/7;
+  grid-row: 7/8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.itemOW9 img {
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 0 1em #000000, 0 0 1em #000000;
+}
+
+.gridTH {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: repeat(11, auto);
+  gap: 50px;
+  justify-items: center;
+}
+
+.itemTH1 {
+  grid-column: 1/7;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemTH2 {
+  grid-column: 1/7;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: center;
+}
+.itemTH2 img {
+  width: 80%;
+  border-radius: 25px;
+  box-shadow: 0 0 1em #000000, 0 0 1em #000000;
+}
+
+.itemTH3 {
+  grid-column: 1/4;
+  grid-row: 3/4;
+  text-shadow: 0 0 0.1em #000000, 0 0 0.1em #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10%;
+}
+
+.itemTH4 {
+  grid-column: 4/7;
+  grid-row: 3/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.itemTH4 img {
+  width: 80%;
+  border-radius: 25px;
+  box-shadow: 0 0 1em #000000, 0 0 1em #000000;
+}
+
+.itemTH5 {
+  grid-column: 1/7;
+  grid-row: 4/5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-shadow: 0 0 0.1em #000000, 0 0 0.1em #000000;
+}
+
+.itemTH6 {
+  grid-column: 1/7;
+  grid-row: 5/6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.itemTH6 img {
+  width: 80%;
+  border-radius: 25px;
+  box-shadow: 0 0 1em #000000, 0 0 1em #000000;
+}
+
+.itemTH7 {
+  grid-column: 3/5;
+  grid-row: 6/9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0 0.1em #000000, 0 0 0.1em #000000;
+}
+
+.itemTH8 {
+  grid-column: 1/3;
+  grid-row: 6/8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.itemTH8 img {
+  width: 90%;
+  border-radius: 25px;
+  box-shadow: 0 0 1em #000000, 0 0 1em #000000;
+}
+
+.itemTH9 {
+  grid-column: 1/3;
+  grid-row: 8/10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.itemTH9 img {
+  width: 90%;
+  border-radius: 25px;
+  box-shadow: 0 0 1em #000000, 0 0 1em #000000;
+}
+
+.itemTH10 {
+  grid-column: 5/7;
+  grid-row: 6/8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.itemTH10 img {
+  width: 90%;
+  border-radius: 25px;
+  box-shadow: 0 0 1em #000000, 0 0 1em #000000;
+}
+
+.itemTH11 {
+  grid-column: 5/7;
+  grid-row: 8/10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.itemTH11 img {
+  width: 90%;
+  border-radius: 25px;
+  box-shadow: 0 0 1em #000000, 0 0 1em #000000;
+}
+
+.itemTH12 {
+  grid-column: 3/5;
+  grid-row: 9/10;
+  display: flex;
+  justify-content: center;
+}
+.itemTH12 img {
+  width: 70%;
+  border-radius: 25px;
+  box-shadow: 0 0 1em #000000, 0 0 1em #000000;
+}
+
+.itemTH13 {
+  grid-column: 1/4;
+  grid-row: 10/11;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+  padding-left: 10%;
+  text-shadow: 0 0 0.1em #000000, 0 0 0.1em #000000;
+}
+
+.itemTH14 {
+  grid-column: 4/7;
+  grid-row: 10/11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+  padding-right: 10%;
+}
+.itemTH14 img {
+  width: 90%;
+  border-radius: 25px;
+  box-shadow: 0 0 1em #000000, 0 0 1em #000000;
+}
+
+/***/
+@media only screen and (max-width: 992px) {
+  .logoIsaMobile {
+    display: none;
+  }
+  .contenedorProjects {
+    display: grid;
+    grid-template-columns: 70%;
+    justify-content: center;
+  }
+  .mainProjectsMenu {
+    height: 100%;
+  }
+  .mainAboutMe {
+    height: 91vh;
+  }
+  .mainAboutMe article figure img {
+    height: 500px;
+    border-radius: 25px;
+    margin-top: 13%;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
+  }
+  .backgroundGif {
+    height: 91vh;
+  }
+  .backgroundFormContact {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  .backgroundMovement {
+    height: 91vh;
+  }
+  .backgroundGeometry {
+    height: 91vh;
+  }
+  .backgroundTexture {
+    height: 91vh;
+  }
+  .color {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    transition: all 1s ease;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .contenedorProjects {
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+  }
+  .h2Projects {
+    font-size: 20px;
+  }
+  footer div {
+    gap: 5%;
+  }
+  footer div p {
+    display: none;
+  }
+  .mainAboutMe {
+    height: 100%;
+    height: 100%;
+  }
+  .mainAboutMe article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .mainAboutMe article figure img {
+    height: 50%;
+    border-radius: 25px;
+    margin-top: 13%;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
+  }
+  .mainAboutMe article div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin-top: 5%;
+  }
+  .backgroundGif {
+    height: 89vh;
+  }
+  .backgroundGif section img {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    width: 80%;
+  }
+  .backgroundFormContact {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
     position: relative;
     width: 90%;
     height: 530px;
-}
-
-.inputContact input {
+  }
+  .mainProjectsMenu {
+    height: 100%;
+  }
+  .pContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 2%;
+    margin-left: 5%;
+    font-weight: 900;
+    font-size: 14px;
+  }
+  .pContact div {
+    margin-top: 2%;
+  }
+  .pContact div span div a {
+    margin: 1%;
+  }
+  .pContact div span div a img {
+    height: 25px;
+    width: 25px;
+    height: 20px;
+    width: 20px;
+  }
+  .backgroundMovement {
+    height: 89vh;
+  }
+  .backgroundGeometry {
+    height: 89vh;
+  }
+  .backgroundTexture {
+    height: 89vh;
+  }
+  .color {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    transition: all 1s ease;
+  }
+  .divAboutMe {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+  }
+  nav {
+    width: 75%;
+  }
+  .navBar {
+    width: 100%;
+  }
+  .navBar li a {
+    text-decoration: none;
+    color: #F07E2E;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+  }
+  .logoIsa {
+    display: none;
+  }
+  .logoIsaFooter {
+    display: none;
+  }
+  .logoIsaMobile {
+    display: block;
+    height: 35px;
+    border-radius: 7px;
+    margin-left: 25%;
+  }
+  .pAboutMe {
+    font-size: 14px;
+  }
+  .h2Contact {
+    font-size: 22px;
+  }
+  .legendContact {
+    font-size: 18px;
+    font-size: 18px;
+  }
+  .labelContact {
+    font-size: 14px;
+  }
+  .labelContact input {
+    font-size: 14px;
+  }
+  .inputContact input {
     margin: 1%;
     margin-top: 11%;
     margin-bottom: 6%;
     font-size: 14px;
+  }
 }
 
-}
+/*# sourceMappingURL=style.css.map */

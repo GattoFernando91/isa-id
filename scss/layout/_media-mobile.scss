@@ -1,0 +1,161 @@
+@media only screen and (max-width: 576px) {
+    .contenedorProjects {
+        display: grid;
+        grid-template-columns: 90%;
+        justify-content: center;
+    }
+    .h2Projects {
+        font-size: 20px;
+    }
+    footer {
+        div {
+            p {
+                display: none;
+            }
+            gap: 5%;
+        }
+    }
+    .mainAboutMe {
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            figure {
+                img {
+                    height: 50%;
+                    border-radius: 25px;
+                    margin-top: 13%;
+                    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
+                }
+            }
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 90%;
+                margin-top: 5%;
+            }
+        }
+        height: 100%;
+        height: 100%;
+    }
+    .backgroundGif {
+        section {
+            img {
+                display: flex;
+                margin: auto;
+                align-items: center;
+                width: 80%;
+            }
+        }
+        height: 89vh;
+    }
+    .backgroundFormContact {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        position: relative;
+        width: 90%;
+        height: 530px;
+    }
+    .mainProjectsMenu {
+        height: 100%;
+    }
+    .pContact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 2%;
+        margin-left: 5%;
+        font-weight: 900;
+        font-size: 14px;
+        div {
+            margin-top: 2%;
+            span {
+                div {
+                    a {
+                        img {
+                            height: 25px;
+                            width: 25px;
+                            height: 20px;
+                            width: 20px;
+                        }
+                        margin: 1%;
+                    }
+                }
+            }
+        }
+    }
+    .backgroundMovement {
+        height: 89vh;
+    }
+    .backgroundGeometry {
+        height: 89vh;
+    }
+    .backgroundTexture {
+        height: 89vh;
+    }
+    .color {
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+        transition: all 1s ease;
+    }
+    .divAboutMe {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+    nav {
+        width: 75%;
+    }
+    .navBar {
+        li {
+            a {
+                text-decoration: none;
+                color: $color-orange;
+                font-family: $typo-principal;
+                font-size: 15px;
+                font-weight: 900;
+            }
+        }
+        width: 100%;
+    }
+    .logoIsa {
+        display: none;
+    }
+    .logoIsaFooter {
+        display: none;
+    }
+    .logoIsaMobile {
+        display: block;
+        height: 35px;
+        border-radius: 7px;
+        margin-left: 25%;
+    }
+    .pAboutMe {
+        font-size: 14px;
+    }
+    .h2Contact {
+        font-size: 22px;
+    }
+    .legendContact {
+        font-size: 18px;
+        font-size: 18px;
+    }
+    .labelContact {
+        font-size: 14px;
+        input {
+            font-size: 14px;
+        }
+    }
+    .inputContact {
+        input {
+            margin: 1%;
+            margin-top: 11%;
+            margin-bottom: 6%;
+            font-size: 14px;
+        }
+    }    
+}

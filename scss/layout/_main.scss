@@ -1,0 +1,446 @@
+main {
+	background-color: $color-black;
+	position: relative;
+	margin: 0;
+}
+.backgroundGif {
+	background-image: url("../assets/video/background-isa.gif");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	section {
+		img {
+			display: flex;
+			margin: auto;
+			align-items: center;
+			-webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+			animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+		}
+	}
+}
+.mainProjectsMenu {
+	background-image: url("../assets/img/fondoProjects.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	font-family: $typo-principal;
+	section {
+		div {
+			img {
+				width: 80%;
+				margin: 5%;
+				border-radius: 10px;
+			}
+		}
+	}
+}
+.mainAboutMe {
+	background-color: $color-white;
+	height: 100%;
+	article {
+		figure {
+			img {
+				height: 700px;
+				border-radius: 25px;
+				margin-top: 13%;
+				box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
+			}
+			display: flex;
+			align-items: center;
+		}
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 100%;
+		div {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: 45%;
+			div {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				width: auto;
+				padding: 2%;
+			}
+		}
+	}
+}
+.h2AboutMe {
+	color: $color-orange;
+	font-family: $typo-principal;
+	font-size: 50px;
+	margin-bottom: 5%;
+}
+.pAboutMe {
+	color: $color-black;
+	font-family: $typo-principal;
+	font-size: 20px;
+}
+.divAboutMe {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	font-family: $typo-principal;
+	font-size: 24px;
+	font-weight: 900;
+	margin-bottom: 3%;
+	padding-left: 50%;
+}
+.aAboutMe {
+	display: flex;
+	text-decoration: underline;
+	color: $color-orange;
+	&:hover {
+		p {
+			color: $color-black;
+			text-decoration: underline;
+		}
+	}
+}
+.h2Projects {
+	color: $color-orange;
+	font-family: $typo-principal;
+	font-size: 30px;
+	text-align: center;
+	font-weight: 900;
+	text-shadow: 0 0 0.2em #000000, 0 0 0.2em #000000;
+	padding-top: 3%;
+	padding-bottom: 2%;
+}
+.pProjects {
+	color: $color-orange;
+	font-family: $typo-principal;
+	font-size: 20px;
+	text-align: left;
+	text-shadow: 0 0 0.2em #000000, 0 0 0.2em #000000;
+	font-weight: 700;
+}
+.aProjects {
+	text-decoration: none;
+}
+.h2Contact {
+	font-family: $typo-principal;
+	font-size: 30px;
+	font-weight: 900;
+	color: $color-orange;
+	text-align: center;
+	margin-bottom: 5%;
+	margin-top: 2%;
+}
+.pContact {
+	font-family: $typo-principal;
+	font-size: 20px;
+	font-weight: 900;
+	color: $color-orange;
+	text-align: left;
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 2%;
+	font-weight: 900;
+	div {
+		p {
+			color: $color-white;
+		}
+		span {
+			p {
+				color: $color-orange;
+			}
+			div {
+				display: flex;
+				justify-content: left;
+				a {
+					margin: 2%;
+					img {
+						height: 25px;
+					}
+				}
+			}
+		}
+	}
+}
+.legendContact {
+	font-family: $typo-principal;
+	font-size: 25px;
+	text-align: center;
+	font-weight: 900;
+	margin: 2%;
+	font-size: 20px;
+	font-family: $typo-principal;
+	color: $color-orange;
+	font-weight: 900;
+	text-align: auto;
+}
+.backgroundFormContact {
+	position: relative;
+	width: 800px;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	&::before {
+		content: "";
+		background-color: $color-black;
+		background-size: cover;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+		opacity: 0.9;
+		border-radius: 25px;
+	}
+}
+.formOnTop {
+	position: relative;
+}
+.backButton {
+	display: flex;
+	justify-content: center;
+	text-decoration: underline;
+	color: $color-orange;
+	font-family: $typo-principal;
+	font-size: 20px;
+	font-weight: 900;
+	text-shadow: 0 0 0.2em #000000, 0 0 0.2em #000000;
+	a {
+		margin-bottom: 2%;
+		margin-top: 3%;
+		color: $color-orange;
+	}
+}
+.aBackButton {
+	&:hover {
+		p {
+			color: $color-white;
+			text-decoration: underline;
+		}
+	}
+}
+.imgProjects {
+	width: 70%;
+	border-radius: 10px;
+	margin-left: 15%;
+	margin-right: 15%;
+	&:hover {
+		-webkit-transform: scale(1.01);
+		-ms-transform: scale(1.01);
+		transform: scale(1.01);
+	}
+}
+.color {
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	transition: all 1s ease;
+	&:hover {
+		filter: grayscale(0%);
+		filter: gray;
+		-webkit-filter: grayscale(0%);
+		filter: none;
+		transition: 1s ease;
+	}
+}
+.backgroundMovement {
+	background-image: url("../assets/img/background-movement.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: normal;
+}
+.backgroundGeometry {
+	background-image: url("../assets/img/background-geometry.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: normal;
+}
+.backgroundTexture {
+	background-image: url("../assets/img/background-texture.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: normal;
+}
+.mainProjects {
+	background-color: $color-white;
+	font-family: $typo-principal;
+	h3 {
+		font-size: 32px;
+		font-weight: 900;
+		color: $color-orange;
+		text-align: center;
+	}
+	p {
+		font-weight: 900;
+		text-align: center;
+	}
+}
+.contenedorProjects {
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+.contenedorDivProjects1 {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 5%;
+	margin-left: 3%;
+	margin-right: 3%;
+	transition: all 0.5s ease-out;
+	&:hover {
+		transform: scale(1.05);
+		transition: all 0.5s ease;
+	}
+}
+.contenedorDivProjects2 {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 5%;
+	margin-left: 3%;
+	margin-right: 3%;
+	transition: all 0.5s ease-out;
+	&:hover {
+		transform: scale(1.05);
+		transition: all 0.5s ease;
+	}
+}
+.contenedorDivProjects3 {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 5%;
+	margin-left: 3%;
+	margin-right: 3%;
+	transition: all 0.5s ease-out;
+	&:hover {
+		transform: scale(1.05);
+		transition: all 0.5s ease;
+	}
+}
+.textImgProjects {
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.labelContact {
+	display: flex;
+	flex-direction: column;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin: 2%;
+	font-size: 20px;
+	font-family: $typo-principal;
+	color: $color-white;
+	font-weight: 900;
+	text-align: auto;
+	border-radius: 10px;
+	input {
+		font-size: 16px;
+		font-family: $typo-principal;
+		color: $color-black;
+		font-weight: 900;
+		text-align: center;
+		border-radius: 10px;
+		width: auto;
+		margin: 1%;
+	}
+}
+.inputContact {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	input {
+		margin: 1%;
+		font-size: 16px;
+		font-family: $typo-principal;
+		color: $color-black;
+		font-weight: 900;
+		text-align: center;
+		background-color: $color-white;
+		border-radius: 10px;
+		cursor: pointer;
+		margin-bottom: 3%;
+	}
+}
+.fieldsetContact {
+	margin-top: 2%;
+	margin-right: 5%;
+	margin-left: 5%;
+	text-align: auto;
+	border-radius: 10px;
+}
+.titlePr {
+	div {
+		h3 {
+			color: $color-orange;
+			font-family: $typo-principal;
+			font-size: 44px;
+			text-align: center;
+			font-weight: 900;
+			text-shadow: 0 0 0.1em #000000, 0 0 0.1em #000000;
+			padding-top: 3%;
+			padding-bottom: 2%;
+		}
+		p {
+			color: $color-black;
+			font-family: $typo-principal;
+			font-weight: 900;
+			font-size: 20px;
+		}
+	}
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.error404 {
+	background-image: url("../../assets/video/background-isa.gif");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	p {
+		color: $color-orange;
+		font-family: $typo-principal;
+		font-size: 300%;
+		font-weight: 900;
+		text-shadow: 0 0 0.1em #000000, 0 0 0.1em #000000;
+	}
+}

@@ -1,0 +1,42 @@
+header {
+	background-color: $color-black;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
+}
+.imgHeader {
+	height: 96px;
+	width: 200px;
+}
+.navBar {
+	li {
+		list-style: none;
+		a {
+			text-decoration: none;
+			color: $color-orange;
+			font-family: $typo-principal;
+			font-size: 15px;
+			font-weight: 900;
+			&:hover {
+				color: $color-white;
+			}
+		}
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+	display: flex;
+	justify-content: space-evenly;
+}
+.logoIsa {
+	width: 188px;
+	height: 47px;
+}
+.logoIsaMobile {
+	display: none;
+}
+nav {
+	width: 50%;
+}
