@@ -875,6 +875,9 @@ footer div a img {
   .mainProjects .error404 p {
     font-size: 200%;
   }
+  .h2ProjectsMobile {
+    padding-bottom: 5%;
+  }
 }
 @media only screen and (max-width: 576px) {
   .contenedorProjects {
@@ -1024,6 +1027,9 @@ footer div a img {
   }
   .mainProjects .error404 p {
     font-size: 130%;
+  }
+  .h2ProjectsMobile {
+    padding-bottom: 5%;
   }
 }
 
