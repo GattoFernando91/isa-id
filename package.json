@@ -1,7 +1,7 @@
 {
   "name": "isa-id",
   "version": "1.0.0",
-  "description": "",
+  "description": "> Este proyecto fue desarrollado para el curso de desarrollo web en la academia CoderHouse.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
