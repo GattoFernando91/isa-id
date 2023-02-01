@@ -1032,5 +1032,18 @@ footer div a img {
     padding-bottom: 5%;
   }
 }
+@media only screen and (min-device-width: 480px) and (max-device-width: 850px) {
+  .mainAboutMe {
+    height: 62em;
+  }
+  .mainAboutMe article div {
+    padding-top: 3%;
+  }
+  .backgroundGifMobile {
+    height: 62em;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
