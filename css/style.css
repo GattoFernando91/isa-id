@@ -239,7 +239,7 @@ main {
 .backgroundFormContact {
   position: relative;
   width: 800px;
-  height: 600px;
+  height: 75vh;
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -931,8 +931,7 @@ footer div a img {
     flex-direction: column;
     width: 90%;
     position: relative;
-    width: 90%;
-    height: 530px;
+    height: 70vh;
   }
   .mainProjectsMenu {
     height: 100%;
